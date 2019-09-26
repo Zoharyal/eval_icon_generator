@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row " style="padding-top:40px;">
+          <div class="col-md-8 img_canvas">
+              <div id="img">
+                <!-- <img src="assets/img/sophie.png" id="img_1"> -->
+              </div>
+              <!-- <div class="icon">
+                <img src="assets/img/it.png" class="it_icon">
+              </div> -->
+          </div>
+          <div class="col-md-4">
+            <button id="upload_file" class="btn btn-info" type="button">Upload file</button>
+            <button id="right_angle" class="btn btn-info" type="button">Right Angle</button>
+            <button id="round_angle" class="btn btn-info" type="button">Round Angle</button>
+            <button id="circle_angle" class="btn btn-info" type="button">Circle Angle</button>
+            <div>
+              <label for="resize_height">Height</label>
+              <input type="number" id="resize_height">
+            </div>
+            <div>
+              <label for="resize_width">Width</label>
+              <input type="number" id="resize_width">
+            </div>
+            <button id="resize_file" class="btn btn-info" type="button">Resize file</button>
+            <input type="color" id="color_file" name="color"
+            value="#ffffff" >
+            <button id="save_file" class="btn btn-info" type="button">Save File</button>
+          </div>
+      </div>
+  </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
